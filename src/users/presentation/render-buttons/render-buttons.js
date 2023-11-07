@@ -30,6 +30,4 @@ export const renderButtons = (element) => {
 
     element.append(previousButton, currentPageLabel, nextButton);
 
-
-
 };
