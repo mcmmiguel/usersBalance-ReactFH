@@ -20,4 +20,4 @@ document.querySelector('#app').innerHTML = `
 const element = document.querySelector('.card');
 
 // setupCounter(document.querySelector('#counter'))
-BreakingBadApp(element)
+// BreakingBadApp(element)
