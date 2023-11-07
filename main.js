@@ -2,6 +2,7 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { BreakingBadApp } from './src/brakingbad/breakingbad-app'
+import { UsersApp } from './src/users/users-app'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -21,3 +22,4 @@ const element = document.querySelector('.card');
 
 // setupCounter(document.querySelector('#counter'))
 // BreakingBadApp(element)
+UsersApp(element);
