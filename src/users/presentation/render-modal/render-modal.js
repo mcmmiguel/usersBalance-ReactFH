@@ -22,7 +22,7 @@ export const showModal = async (id) => {
 
 export const hideModal = () => {
     modal?.classList.add('hide-modal');
-    modal?.reset();
+    form?.reset();
 };
 
 /**
