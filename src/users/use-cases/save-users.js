@@ -1,3 +1,4 @@
+import { userModelToLocalHost } from "../mappers/user-to-localhost.mapper";
 import { User } from "../models/user";
 
 /**
@@ -8,12 +9,15 @@ export const saveUser = async (userLike) => {
 
     const user = new User(userLike);
 
+    if (!user.firstName || !user.lastName) throw 'Hay campos sin llenar'
+
+    const userToSave = userModelToLocalHost(user);
+
     if (user.id) {
         throw 'No implementado';
     }
 
-    const updatedUser = await createUser(user);
-
+    const updatedUser = await createUser(userToSave);
     return updatedUser;
 
 };
