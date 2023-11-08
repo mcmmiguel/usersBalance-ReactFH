@@ -28,11 +28,13 @@ form {
 }
 
 input {
-    margin: 5px 0;
-    padding: 5px;
+    margin: 7.5px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 span,
 label {
     color: black;
+    margin: 0 auto;
 }

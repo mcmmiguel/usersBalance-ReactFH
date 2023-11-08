@@ -1,5 +1,7 @@
 table {
     background-color: rgba(0, 0, 0, 0.348);
     border-radius: 5px;
-    padding: 5px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 50px;
 }
