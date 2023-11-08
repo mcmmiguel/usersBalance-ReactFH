@@ -5,3 +5,10 @@ table {
     width: 100%;
     margin-bottom: 50px;
 }
+
+th {
+    padding: 5px;
+    background-color: #F1F2EE;
+    color: #435058;
+    border-radius: 5px;
+}
