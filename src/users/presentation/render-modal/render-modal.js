@@ -17,8 +17,9 @@ export const hideModal = () => {
 /**
  * 
  * @param {HTMLDivElement} element 
+ * @param {(userLike) => Promise<void>} callback
  */
-export const renderModal = (element) => {
+export const renderModal = (element, callback) => {
 
     if (modal) return;
 
@@ -34,7 +35,7 @@ export const renderModal = (element) => {
         };
     });
 
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
         event.preventDefault();
         console.log(event);
 
@@ -56,6 +57,7 @@ export const renderModal = (element) => {
 
         }
 
+        await callback(userLike);
         hideModal();
 
     })
